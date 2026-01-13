@@ -15,24 +15,27 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char		*des;
-	const char	*sr;
-	char		temp;
-	size_t	i;
+	unsigned char		*des;
+	const unsigned char	*sr;
+	size_t		i;
 
-	des = (char *)dest;
-	sr = (char *)src;
+	if (!dest && !src)
+		return (NULL);
+	des = (unsigned char *)dest;
+	sr = (const unsigned char *)src;
 	i = 0;
-	while (src[i] && i < n)
+	while (i < n)
 	{
-		sr[i] = temp[i];
-		i++;
-	}
-	i = 0;
-	while (temp[i] && i < n)
-	{
-		temp[i] = des[i];
+		des[i] = sr[i];
 		i++;
 	}
 	return (des);
 }
+/*int	main(void)
+{
+	char	d[] = "bonjour";
+
+	ft_memmove(d + 2, d, 7);
+	printf("%s\n", (char *)ft_memmove(d + 2, d, 7));
+	return (0);
+}*/

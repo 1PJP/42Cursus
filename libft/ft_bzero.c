@@ -15,16 +15,16 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*ptr;
+	unsigned char	*ptr;
 
-	ptr = (char *)s;
+	ptr = (unsigned char *)s;
 	while (n != 0)
 	{
 		ptr[n - 1] = '\0';
 		n--;
 	}
 }
-int	main(void)
+/*int	main(void)
 {
 	char	p[] = "bonjour";
 	int	i = 0;
@@ -36,4 +36,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}
+}*/
