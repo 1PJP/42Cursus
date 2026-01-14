@@ -6,7 +6,7 @@
 /*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 19:21:37 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/13 19:56:23 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/14 18:48:51 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,43 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char		*des;
-	const unsigned char	*sr;
+	unsigned char		*d;
+	const unsigned char	*s;
 	size_t		i;
 
 	if (!dest && !src)
 		return (NULL);
-	des = (unsigned char *)dest;
-	sr = (const unsigned char *)src;
-	i = 0;
-	while (i < n)
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	if (d < s)
 	{
-		des[i] = sr[i];
-		i++;
+		i = 0;
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
-	return (des);
+	else
+	{
+		i = n;
+		while (i > 0)
+		{
+			i--;
+			d[i] = s[i];
+		}
+	}
+	return (dest);
 }
 /*int	main(void)
 {
-	char	d[] = "bonjour";
+	char	d[] = "holalla";
+	char	f[] = "holalla";
+	int	i = 5;
 
-	ft_memmove(d + 2, d, 7);
-	printf("%s\n", (char *)ft_memmove(d + 2, d, 7));
+	printf("%s\n", d);
+	printf("%s\n", (char *)ft_memmove(d, d + 2, i));
+	memmove(f, f + 2, i);
+	printf("%s\n", f);
 	return (0);
 }*/

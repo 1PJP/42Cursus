@@ -1,37 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/12 19:16:48 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/14 11:20:59 by jezambra         ###   ########.fr       */
+/*   Created: 2026/01/14 15:21:16 by jezambra          #+#    #+#             */
+/*   Updated: 2026/01/14 19:06:42 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 #include <string.h>
+#include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	size_t	i;
+	size_t	j;
 
-	ptr = (unsigned char *) s;
-	i = 0;
-	while (i < n)
+	j = 0;
+	while (src[j])
+		j++;
+	if (j >  0)
 	{
-		ptr[i] = c ;
+		i = 0;
+		while (i < (size - 1) && src[i])
+		{
+			dst[j] = src[i];
 		i++;
+		}
 	}
-	return (s);
+	dst[j] = '\0';
+	return (size);
 }
-/*int	main(void)
+int	main(void)
 {
-	char	s[] = "ca va";
-
-	ft_memset(s, 'j', 2);
-
-	printf("%s", s);
+	char	des[] = "";
+	char	ss[] = "spasiva";
+	int	len = 8;
+	char	func;
+	
+	printf("%s\n", ss);
+	func = ft_strlcpy(des, ss, len);
+	printf("%c\n", func);
+	printf("%d\n", func);
 	return (0);
-}*/
+}

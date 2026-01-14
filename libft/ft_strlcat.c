@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/12 19:16:48 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/14 11:20:59 by jezambra         ###   ########.fr       */
+/*   Created: 2026/01/14 18:47:49 by jezambra          #+#    #+#             */
+/*   Updated: 2026/01/14 19:22:01 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 #include <string.h>
+#include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+size_t	(char *dst, const char *src, size_t size)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	unsigned char	d;
+	unsigned char	s;
+	int		i;
 
-	ptr = (unsigned char *) s;
-	i = 0;
-	while (i < n)
+	d = 0;
+	while (dst[d])
+		d++;
+	s = 0;
+	while (src[s])
+		s++;
+	if (size < d)
 	{
-		ptr[i] = c ;
-		i++;
+		
 	}
-	return (s);
 }
-/*int	main(void)
-{
-	char	s[] = "ca va";
-
-	ft_memset(s, 'j', 2);
-
-	printf("%s", s);
-	return (0);
-}*/
