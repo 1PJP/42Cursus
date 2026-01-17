@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:46:23 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/13 18:55:26 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:18:44 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -29,7 +28,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (des);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	char	dest[] = "ca va";
 	char	src[] = "bien!";

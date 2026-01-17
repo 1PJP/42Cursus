@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 19:21:37 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/16 22:36:33 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 20:06:07 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (const unsigned char *)src;
 	if (d < s)
 		ft_memcpy(dest, src, n);
-	return (dest);
 	else
 	{
 		i = n;
@@ -36,8 +35,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <string.h>
+/*#include <string.h>
 #include <stdio.h>
 int	main(void)
 {

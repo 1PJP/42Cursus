@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 19:16:48 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/14 11:20:59 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:28:03 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 #include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
@@ -26,7 +26,9 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	char	s[] = "ca va";
 

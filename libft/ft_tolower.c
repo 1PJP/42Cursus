@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <jezambra@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 22:38:09 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/16 22:45:27 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:24:29 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

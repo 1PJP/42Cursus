@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 18:07:03 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/12 18:15:52 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:18:18 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isprint(int c)
 {
@@ -18,7 +16,9 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	int	c;
 

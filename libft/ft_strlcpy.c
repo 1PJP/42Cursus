@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:21:16 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/16 22:21:05 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:23:21 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdio.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -33,7 +32,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (size);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	char	des[] = "";
 	char	ss[] = "spasiva";

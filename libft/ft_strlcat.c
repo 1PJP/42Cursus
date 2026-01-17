@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 18:47:49 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/16 21:50:20 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:20:58 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -36,7 +35,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len_d + i] = '\0';
 	return (len_d + len_s);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	char	d[] = "priviet";
 	char	s[] = "spasiva";

@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 17:41:12 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/12 18:04:17 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:17:44 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isascii(int c)
 {
@@ -18,7 +16,9 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	int	c;
 

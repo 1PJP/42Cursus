@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 16:35:55 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/12 16:45:44 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:18:02 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
@@ -17,7 +16,9 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	int	c;
 

@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 17:28:44 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/12 17:39:31 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/17 14:54:57 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isalnum(int c)
 {
@@ -18,7 +16,9 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-/*int	main(void)
+/*
+#include <stdio.h>
+int	main(void)
 {
 	int	c;
 
