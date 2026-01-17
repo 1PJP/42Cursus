@@ -6,27 +6,44 @@
 /*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 18:47:49 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/14 19:22:01 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/16 21:50:20 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-size_t	(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned char	d;
-	unsigned char	s;
-	int		i;
+	unsigned int	len_d;
+	unsigned int	len_s;
+	unsigned int	i;
 
-	d = 0;
-	while (dst[d])
-		d++;
-	s = 0;
-	while (src[s])
-		s++;
-	if (size < d)
+	len_d = 0;
+	while (dst[len_d] && len_d < size)
+		len_d++;
+	len_s = 0;
+	while (src[len_s])
+		len_s++;
+	if (len_d == size)
+		return (size + len_s);
+	i = 0;
+	while (src[i] && (len_d + i + 1) < size)
 	{
-		
+		dst[len_d + i] = src[i];
+		i++;
 	}
+	dst[len_d + i] = '\0';
+	return (len_d + len_s);
 }
+/*int	main(void)
+{
+	char	d[] = "priviet";
+	char	s[] = "spasiva";
+	size_t	n = 12;
+
+	printf("%s\n%s\n", d, s);
+	ft_strlcat(d, s, n);
+	printf("%s\n", d);
+	return (0);
+}*/

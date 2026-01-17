@@ -6,7 +6,7 @@
 /*   By: jezambra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:21:16 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/14 19:06:42 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/16 22:21:05 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	j = 0;
 	while (src[j])
 		j++;
-	if (j >  0)
+	if (j > 0)
 	{
 		i = 0;
 		while (i < (size - 1) && src[i])
 		{
 			dst[j] = src[i];
-		i++;
+			i++;
 		}
 	}
 	dst[j] = '\0';
 	return (size);
 }
-int	main(void)
+/*int	main(void)
 {
 	char	des[] = "";
 	char	ss[] = "spasiva";
@@ -45,4 +45,4 @@ int	main(void)
 	printf("%c\n", func);
 	printf("%d\n", func);
 	return (0);
-}
+}*/
