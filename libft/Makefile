@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+         #
+#    By: jp <jp@student.42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/17 20:10:05 by jezambra          #+#    #+#              #
-#    Updated: 2026/01/17 20:25:37 by jezambra         ###   ########.fr        #
+#    Updated: 2026/01/18 16:57:30 by jp               ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,28 +15,50 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = ft_atoi.c \
-ft_bzero.c \
-ft_calloc.c \
-ft_isalnum.c \
-ft_isalpha.c \
-ft_isascii.c \
-ft_isdigit.c \
-ft_isprint.c \
-ft_memchr.c \
-ft_memcmp.c \
-ft_memcpy.c \
-ft_memmove.c \
-ft_memset.c \
-ft_strchr.c \
-ft_strdup.c \
-ft_strlcat.c \
-ft_strlcpy.c \
-ft_strlen.c \
-ft_strncmp.c \
-ft_strnstr.c \
-ft_strrchr.c \
-ft_tolower.c \
-ft_toupper.c \
+SRC =	ft_atoi.c \
+		ft_bzero.c \
+		ft_calloc.c \
+		ft_isalnum.c \
+		ft_isalpha.c \
+		ft_isascii.c \
+		ft_isdigit.c \
+		ft_isprint.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_memcpy.c \
+		ft_memmove.c \
+		ft_memset.c \
+		ft_strchr.c \
+		ft_strdup.c \
+		ft_strlcat.c \
+		ft_strlcpy.c \
+		ft_strlen.c \
+		ft_strncmp.c \
+		ft_strnstr.c \
+		ft_strrchr.c \
+		ft_tolower.c \
+		ft_toupper.c \
 
 OBJ = $(SRC:.c=.o)
+
+INCLUDE = libft.h
+AR = ar rcs
+RM = rm -f
+
+.PHONY: all clean fclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(AR) $@ $^
+
+%.o: %.c $(INCLUDE)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) $(OBJ)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
