@@ -213,6 +213,22 @@ NULL si falla la reserva de memoria.
 
 
 
+							ft_substr
+
+Reserva memoria y devuelve una subcadena de caracteres de la cadena principal, la subcadena comienza en el índice ‘start’ y tieneuna longitud máxima ‘len’ y retorna:
+
+La subcadena de caracteres resultante.
+NULL si falla la reserva de memoria.
+
+
+
+							ft_strjoin
+
+Reserva memoria y devuelve una nueva cadena de caracteres, formada por la concatenación de ‘s1’ y ‘s2’, es muy similar a ft_strcat pero la diferencia es que guarda el resultado de las 2 varialbles 's1' y 's2' en una nueva variable la cual llame 's3' y retorna:
+
+La nueva cadena de caracteres en mi caso 's3;
+NULL si falla la reserva de memoria.
+
 
 
 					Esta biblioteca sirve para:
