@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 19:14:00 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/17 19:38:02 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:28:41 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ int	main(void)
 	printf("%s\n", str);
 	func = ft_strdup(str);
 	printf("%s\n", func);
+	free(func);
 	return (0);
 }*/

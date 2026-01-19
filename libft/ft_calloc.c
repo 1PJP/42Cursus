@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 17:54:31 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/17 19:13:45 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:28:12 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ int	main(void)
 	j = 0;
 	while (j < 10)
 		printf("%d\n", ptr[j++]);
+	free(ptr);
 	return (0);
 }*/

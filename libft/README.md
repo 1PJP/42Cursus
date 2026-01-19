@@ -1,21 +1,28 @@
 
-								Libft – Biblioteca 📚
+					Descripcion Libft – Biblioteca 📚
 
 
-Libft es una biblioteca personal que reimplementadno funciones básicas dellenguaje C, el objetivo es ver cómo funcionan internamente las funciones funciones descritas en esta biclioteca 
+Libft es una biblioteca personal que replica el funcionamiento de las funciones básicas de C, el objetivo es ver cómo funcionan internamente las funciones, funciones las cuales tienen una descripcion en este archivo, antes de empezar dejare a continuacion las instruciones para poder hacer el suso correcto.
 
 
 
-									ft_isalpha	
+							instruciones
+
+
+Para poder hacer la compilacion genelar ponemos por terminal "make" sin las colillas, revisamos listando los archivos con el comando "ls" y verificamos que existan tanto los .c como los .o de cada archivo.
+
+
+
+							ft_isalpha	
 
 Comprueba si un carácter es una letra tanto mayúscula como minúscula (A–Z o a–z), el valor a retornar es:
 
- 1 si es una letra
+1 si es una letra
 0 si no lo es
 
 
 
-									Ft_isdigit
+							Ft_isdigit
 
 Comprueba si un carácter es un número del 0 al 9 y retorna:
 
@@ -24,7 +31,7 @@ Comprueba si un carácter es un número del 0 al 9 y retorna:
 
 
 
-									ft_isalnum
+							ft_isalnum
 
 Comprueba si un carácter es una letra o un número y retorna:
 
@@ -33,7 +40,7 @@ Comprueba si un carácter es una letra o un número y retorna:
 
 
 
-									ft_isascii
+							ft_isascii
 
 Comprueba si un carácter pertenece al conjunto ASCII y retorna:
 
@@ -42,7 +49,7 @@ Comprueba si un carácter pertenece al conjunto ASCII y retorna:
 
 
 
-									ft_isprint
+							ft_isprint
 
 Comprueba si un carácter es imprimible en pantalla y retorna:
 
@@ -51,7 +58,7 @@ Comprueba si un carácter es imprimible en pantalla y retorna:
 
 
 
-									ft_strlen
+							ft_strlen
 
 Calcula la longitud de una cadena de texto y retorna:
 
@@ -59,7 +66,7 @@ El número de caracteres de la cadena
 
 
 
-									ft_strchr
+							ft_strchr
 
 Busca la primera aparición de un carácter en una cadena y retorna:
 
@@ -68,7 +75,7 @@ NULL si no se encuentra
 
 
 
-									ft_strrchr
+							ft_strrchr
 
 Busca la última aparición de un carácter en una cadena y retorna:
 
@@ -77,7 +84,7 @@ NULL si no se encuentra
 
 
 
-									ft_strncmp
+							ft_strncmp
 
 Compara dos cadenas hasta un número determinado de caracteres y retorna:
 
@@ -86,7 +93,7 @@ Un valor positivo o negativo si son diferentes
 
 
 
-									ft_strlcpy
+							ft_strlcpy
 
 Copia una cadena en otra de forma segura  y retorna:
 
@@ -94,7 +101,7 @@ La longitud total de la cadena original
 
 
 
-									ft_strlcat
+							ft_strlcat
 
 Concatena dos cadenas sin exceder el tamaño del buffer y retorna:
 
@@ -102,7 +109,7 @@ La longitud total de la cadena que intentó crear
 
 
 
-									ft_strnstr
+							ft_strnstr
 
 Busca una cadena dentro de otra, limitando la búsqueda y retorna:
 
@@ -111,7 +118,7 @@ NULL si no se encuentra
 
 
 
-									ft_memset
+							ft_memset
 
 Rellena un bloque de memoria con un valor específico y retorna:
 
@@ -119,7 +126,7 @@ Un puntero al bloque de memoria
 
 
 
-									ft_bzero
+							ft_bzero
 
 Pone todos los bytes de un bloque de memoria en ceroy retorna:
 
@@ -127,7 +134,7 @@ No retorna ningún valor
 
 
 
-									ft_memcpy
+							ft_memcpy
 
 Copia un bloque de memoria en otroy retorna:
 
@@ -135,7 +142,7 @@ Un puntero al destino
 
 
 
-									ft_memmove
+							ft_memmove
 
 Copia un bloque de memoria incluso si las zonas se solapan y retorna:
 
@@ -143,7 +150,7 @@ Un puntero al destino
 
 
 
-									ft_memchr
+							ft_memchr
 
 Busca un valor dentro de un bloque de memoria y retorna:
 
@@ -152,7 +159,7 @@ NULL si no se encuentra
 
 
 
-									ft_memcmp
+							ft_memcmp
 
 Compara dos bloques de memoria y retorna:
 
@@ -161,7 +168,7 @@ Un valor positivo o negativo si son diferentes
 
 
 
-									ft_toupper
+							ft_toupper
 
 Convierte una letra minúscula a mayúscula y retorna:
 
@@ -170,7 +177,7 @@ El mismo carácter si no es una letra
 
 
 
-									ft_tolower
+							ft_tolower
 
 Convierte una letra mayúscula a minúscula y retorna:
 
@@ -179,7 +186,7 @@ El mismo carácter si no es una letra
 
 
 
-									ft_atoi
+							ft_atoi
 
 Convierte una cadena de texto en un número enteroy retorna:
 
@@ -188,7 +195,7 @@ El número convertido;
 
 
 
-									ft_calloc
+							ft_calloc
 
 Reserva un bloque de memoria para varios elementos, inicializa todos los bytes en 0 automáticamente y retorna:
 
@@ -197,7 +204,7 @@ NULL si no pudo reservar la memoria.
 
 
 
-									ft_strdup
+							ft_strdup
 
 Reserva memoria suficiente para una cadena, copia el contenido de la cadena original (incluido '\0') y retorna:								
 
@@ -208,7 +215,7 @@ NULL si falla la reserva de memoria.
 
 
 
-							Esta biblioteca sirve para:
+					Esta biblioteca sirve para:
 
 
 Comprender cómo funcionan estas funcionesen C, tambien para aprender el manejo de memoria, trabajar con cadenas de texto y fortalecer la lógica en programación que si que tiene cositas

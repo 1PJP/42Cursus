@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:56:24 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/17 20:04:37 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/19 12:28:15 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ int	ft_atoi(const char *nptr)
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		nbr_save = (nbr_save * 10) + (nptr[i] - '0');
+		nbr_save = nbr_save * 10;
+		nbr_save = nbr_save + nptr[i] - '0';
 		i++;
 	}
 	return (nbr_save * sig);
