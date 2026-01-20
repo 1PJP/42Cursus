@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 19:14:00 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 19:14:57 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/20 19:14:43 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,7 @@ char	*ft_strdup(const char *s)
 		ptr[i] = s[i];
 		i++;
 	}
-	if (ptr[i] == '\0')
-		return (ptr);
+	ptr[i] = '\0';
 	return (ptr);
 }
 /*#include <stdio.h>
