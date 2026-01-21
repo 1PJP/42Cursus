@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jezambra <jezambra@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 22:46:27 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/17 01:07:52 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/21 16:22:19 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
 
-char	*ft_strchr(char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
 	unsigned char	ch;
 	int				i;
@@ -21,11 +22,11 @@ char	*ft_strchr(char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == ch)
-			return (s + i);
+			return ((char *)&s[i]);
 		i++;
 	}
 	if (ch == '\0')
-		return (s + i);
+		return ((char *)&s[i]);
 	return (NULL);
 }
 /*#include <stdio.h>
