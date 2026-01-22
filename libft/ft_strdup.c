@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 19:14:00 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/20 19:14:43 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/22 13:20:40 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,12 @@ char	*ft_strdup(const char *s)
 int	main(void)
 {
 	char	str[] = "spasiva";
-	char	*func;
+	//char	*func;
 
 	printf("%s\n", str);
-	func = ft_strdup(str);
-	printf("%s\n", func);
-	free(func);
+	//func = ft_strdup(str);
+	//printf("%s\n", func);
+	printf("%s\n", (char *)ft_strdup(str));
+	free((char *)ft_strdup(str));
 	return (0);
 }*/

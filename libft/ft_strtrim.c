@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 20:57:31 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/21 16:40:45 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/22 19:25:18 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 /*int	main(void)
 {
-	char	s[] = "abcaholaabc";
-	char	set[] = "abc";
+	char	s[] = "abccaholaabbc";
+	char	set[] = "cba";
 	char	*func;
 
 	printf("%s\n%s\n", s, set);
