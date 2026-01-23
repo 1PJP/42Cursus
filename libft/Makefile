@@ -6,7 +6,7 @@
 #    By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/17 20:10:05 by jezambra          #+#    #+#              #
-#    Updated: 2026/01/23 18:55:45 by jezambra         ###   ########.fr        #
+#    Updated: 2026/01/23 22:39:56 by jezambra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ SRC =	ft_atoi.c \
 		ft_strjoin.c \
 		ft_strtrim.c \
 		ft_spli.c \
+		ft_itoa.c \
 
 OBJ = $(SRC:.c=.o)
 

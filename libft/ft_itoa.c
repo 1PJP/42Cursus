@@ -6,38 +6,67 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 12:30:41 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/23 20:44:24 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/23 22:51:58 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
+static int	dig_sig(long nbr)
+{
+	int	i;
+
+	i = 0;
+	if (nbr <= 0)
+		i++;
+	while (nbr != 0)
+	{
+		nbr = nbr / 10;
+		i++;
+	}
+	return (i);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*ch;
-	int	i;
-	int	nbr;
+	int		i;
+	long	nbr;
 
-	if (n == -2147483648) // max2147483647, min-2147483648
-	return ("-2147483648"); 
-	i = 0;
 	nbr = n;
+	i = dig_sig(nbr);
+	ch = malloc(i + 1);
+	if (!ch)
+		return (NULL);
+	ch[i] = '\0';
 	if (nbr < 0)
 	{
-		i++; // contador para el signo negativo
+		ch[0] = '-';
 		nbr = -nbr;
 	}
-	while (nbr > 9)
+	if (nbr == 0)
+		ch[0] = '0';
+	while (nbr > 0)
 	{
+		ch[--i] = (nbr % 10) + '0';
 		nbr = nbr / 10;
-		i++; // contador de numeros del resutado de la /
 	}
-	if (nbr < 10)
-		i++; // cuenta el ultimo numero
-		ch = malloc(i + 1);
-		if(!ch)// reserva de malloc para la cadena y si falla
-			return (NULL);
+	return (ch);
 }
-//esta funcion sirve para convertir numero en texto
-//'\0' es nulo para un string
-//NULL es para los punteros
+/*#include <string.h>
+#include <stdio.h>
+
+int	main(void)
+{
+	int	max = 2147483647;
+	int	min = -2147483648;
+	char	*funcmax;
+	char	*funcmin;
+
+	printf("%d\n%d\n", max, min);
+	funcmax = ft_itoa(max);
+	funcmin = ft_itoa(min);
+	printf("%s\n", funcmax);
+	printf("%s\n", funcmin);
+	return (0);
+}*/
