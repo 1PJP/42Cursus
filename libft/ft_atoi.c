@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 16:56:24 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 12:28:15 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/23 17:28:02 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,20 +38,20 @@ int	ft_atoi(const char *nptr)
 /*#include <string.h>
 #include <stdio.h>
 
-//-2147483648
-//+2147483647
+//+2147483647 max.
+//-2147483648 min.
 
 int	main(void)
 {
-	char	nbr[] = "2147483647"; 
-	char	nbr1[] = "-2147483648";
-	int	func;
-	int	funci;
+	char	nbrmax[] = "2147483647"; 
+	char	nbrmin[] = "-2147483648";
+	int	funcmax;
+	int	funcmin;
 
-	printf("%s\n%s\n", nbr, nbr1);;
-	func = ft_atoi(nbr);
-	funci = ft_atoi(nbr1);
-	printf("%d\n", func);
-	printf("%d\n", funci);
+	printf("%s\n%s\n", nbrmax, nbrmin);;
+	funcmax = ft_atoi(nbrmax);
+	funcmin = ft_atoi(nbrmin);
+	printf("%d\n", funcmax);
+	printf("%d\n", funcmin);
 	return (0);
 }*/

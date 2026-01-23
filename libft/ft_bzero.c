@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:30:41 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 12:28:09 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/23 19:04:06 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_bzero(void *s, size_t n)
 	char	p[] = "bonjour";
 	int	i = 0;
 
-	ft_bzero(p, 4);
+	ft_bzero(p, 3);
 	while (i < 7)
 	{
 		printf("%c", p[i]);
