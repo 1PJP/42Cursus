@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 16:52:52 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/23 17:20:23 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/24 18:15:01 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,24 +112,7 @@ char	**ft_split(char const *s, char c)
 	words_in_box(str, s, c, word);
 	return (str);
 }
-/*int	main(void)
-{
-	char	**ptr;
-	char	str[] = "Bonjour, Madame, Monsieur";
-	char	c = ' ';
-	int		i;
 
-	ptr = ft_split(str, c);
-	i = 0;
-	while (ptr[i])
-	{
-		printf("%s\n", ptr[i]);
-		free(ptr[i]); //libera malloc de palabras.
-		i++;
-	}
-	free(ptr); //libera gran malloc.
-	return (0);
-}*/
 /*int main(void)
 {
 	char **result;
