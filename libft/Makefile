@@ -6,7 +6,7 @@
 #    By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/17 20:10:05 by jezambra          #+#    #+#              #
-#    Updated: 2026/01/24 22:28:50 by jezambra         ###   ########.fr        #
+#    Updated: 2026/01/25 19:26:03 by jezambra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,11 @@ SRC =	ft_atoi.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back \
 		
 
 OBJ = $(SRC:.c=.o)

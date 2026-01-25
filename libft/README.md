@@ -12,7 +12,7 @@ Libft es una biblioteca personal que replica el funcionamiento de las funciones 
 # instruciones
 
 
-Para poder hacer la compilacion genelar ponemos por terminal "make" sin las colillas, revisamos listando los archivos con el comando "ls" y verificamos que existan tanto los .c como los .o de cada archivo, con el comando "make clean" borra todos los archivos .o que se crearon y por untimo el comando "make fclean" borra todos los archivos restantes que se hicieron con la compilacion, dejando solo los archivos .c
+Para poder hacer la compilacion genelar ponemos por terminal *make*, revisamos listando los archivos con el comando *ls* y verificamos que existan tanto los *.c* como los *.o* de cada archivo, con el comando *make clean* borra todos los archivos *.o* que se crearon y por ultimo el comando *make fclean* borra todos los archivos restantes que se hicieron con la compilacion, dejando solo los archivos *.c*
 
 
 
@@ -271,8 +271,47 @@ Similar a ft_putstr_fd, pero añade un salto de línea al final de la cadena, mu
 
 # ft_putnbr_fd
 
-Convierte un número entero en caracteres ASCII y los escribe en un file descriptor, Maneja números positivos y negativos, e incluso el límite mínimo y maximo de un entero, no retorna nada
+Convierte un número entero en caracteres ASCII y los escribe en un file descriptor, Maneja números positivos y negativos, e incluso el límite mínimo y maximo de un entero, no retorna nada.
 
+
+
+
+# ft_lstnew
+
+Crea un nuevo nodo de una lista enlazada, reserva memoria para el nodo y guarda el dato recibido dentro del nodo retorna:
+
+Devuelve el nuevo nodo creado.
+Devuelve NULL si la reserva de memoria falla.
+
+
+
+# ft_lstadd_front
+
+Añade un nodo al inicio de una lista enlazada, el nuevo nodo pasa a ser el primero de la lista y el antiguo primer nodo pasa a ser el segundo, no retorna ningun valor.
+
+
+
+# ft_lstsize
+
+Cuenta cuántos nodos tiene una lista enlazada, recorre la lista nodo por nodo hasta llegar al final y devuelve el número total de nodos encontrados, retorna:
+
+Devuelve un entero con el número de nodos de la lista.
+Devuelve 0 si la lista está vacía.
+
+
+
+# ft_lstlast
+
+Recorre la lista hasta encontrar el nodo cuyo enlace al siguiente sea NULL y retorna:
+
+Devuelve el último nodo de la lista.
+Devuelve NULL si la lista está vacía.
+
+
+
+# ft_lsdadd_back
+
+Añade un nodo al final de una lista enlazada, si la lista está vacía, el nodo añadido se convierte en el primero si no, se enlaza después del último nodo existente no retorna ningun valor.
 
 
 
@@ -285,4 +324,4 @@ Comprender cómo funcionan estas funcionesen C, tambien para aprender el manejo 
 # Recursos
 
 
-la mayor parte de esta informacion se obtuvo en el campus de 42Madrid gracias al apoyo y ayuda de los estudiantes con el "Peer to Peer", tambien en foros de internet y en los manuales de linux.
+la mayor parte de esta informacion se obtuvo en el campus de 42Madrid gracias al apoyo y ayuda de los estudiantes con el *Peer to Peer*, tambien en foros de internet y en los manuales de linux.
