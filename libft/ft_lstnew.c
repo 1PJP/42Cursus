@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 22:16:20 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/25 12:48:50 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/26 11:30:21 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ int	main(void)
 	char	str[] = "hola buenass";
 	t_list	*func;
 
-	printf("%s\n" , str);
+	printf("%s\n" , str);//lo que va a tener el nodo.
 	func = ft_lstnew(&str);
-	printf("%p\n", func->content);
-	printf("%s\n", (char *)func->content);
-	printf("%p\n", (void *)func->next);
+	printf("%p\n", func->content);//direcion de memoria nodo.
+	printf("%s\n", (char *)func->content);lo que tiene ya nodo.
+	printf("%p\n", (void *)func->next);//return NULL.
 	free(func);
 	return (0);
 }*/

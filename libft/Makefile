@@ -6,7 +6,7 @@
 #    By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/17 20:10:05 by jezambra          #+#    #+#              #
-#    Updated: 2026/01/25 19:26:03 by jezambra         ###   ########.fr        #
+#    Updated: 2026/01/26 18:11:49 by jezambra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,9 @@ SRC =	ft_atoi.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
-		ft_lstadd_back \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft?lstclear.c \
 		
 
 OBJ = $(SRC:.c=.o)

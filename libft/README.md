@@ -5,7 +5,7 @@
 # Descripcion Libft – Biblioteca 📚.
 
 
-Libft es una biblioteca personal que replica el funcionamiento de las funciones básicas de C, el objetivo es ver cómo funcionan internamente las funciones, funciones las cuales tienen una descripcion en este archivo, antes de empezar dejare a continuacion las instruciones para poder hacer el uso correcto.
+Libft es una biblioteca personal que replica el funcionamiento de las funciones básicas de C para asi poder entender y comprnder mejor como utilizarlas, el objetivo es ver cómo funcionan internamente, analizar y recrear el codigo estas funciones  las cuales tienen una leve descripcion en este archivo, antes de empezar dejare a continuacion las instruciones para poder hacer el uso correcto.
 
 
 
