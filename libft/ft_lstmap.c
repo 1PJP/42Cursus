@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 20:07:13 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/26 23:45:11 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/26 23:51:19 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		newnodo = ft_lstnew(newcontent);
 		if (!newnodo)
 		{
-			del(newcontent);
 			ft_lstclear(&newlist, del);
 			return (NULL);
 		}
@@ -39,7 +38,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 }
 /*#include <stdio.h>
 #include <string.h>
-#include "libft.h"
 void	del(void *content)
 {
 	free(content);//funcion para usar del.

@@ -315,6 +315,34 @@ Añade un nodo al final de una lista enlazada, si la lista está vacía, el nodo
 
 
 
+# ft_lstdelone.
+
+Libera la memoria del contenido de un nodo usando la función "del" y después libera el propio nodo, no modifica el resto de la lista y no retorna nada.
+
+
+
+# ft_lstclear.
+
+Elimina y libera todos los nodos de una lista, para cada nodo, aplica la función "del" al contenido y libera la memoria del nodo, al final, la lista queda vacía, no retorna nada pero la lista deveria dar un NULL.
+
+
+
+# ft_lstiter.
+
+Recorre la lista y aplica la función "f" al contenido de cada nodo, sin modificar la estructura de la lista y retorna:
+
+La lista con la función aplicada al contenido de cada nodo
+
+
+
+# ft_lstmap
+
+Crea una nueva lista resultante de aplicar la función "f" al contenido de cada nodo de la lista original, si ocurre un error durante la creación, libera toda la memoria asignada usando "del" y retorna:
+
+Una nueva lista con el contenido de la lista original pero modificado con la funcio "f" o NULL si ocurre un error de memoria
+
+
+
 # Esta biblioteca sirve para:
 
 

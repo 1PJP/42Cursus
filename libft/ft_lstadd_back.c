@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 19:24:47 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/26 23:34:27 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/27 13:42:40 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst || !new)
 		return ;
-	end = *lst;
 	if (*lst == NULL)
 	{
 		*lst = new;
@@ -49,4 +48,5 @@ int	main(void)
 	return (0);
 }*/
 /*esta funcion lo que hace es que repmplaza el ultimo nodo por 
-uno que nosotros asignemos*/
+uno que nosotros asignemos si queremos que el nodo 1 sea el ultimo 
+esta funcion lo hace*/

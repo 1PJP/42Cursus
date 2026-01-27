@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 16:52:52 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/24 18:15:01 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/27 14:24:08 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -173,8 +173,8 @@ char	**ft_split(char const *s, char c)
 				{	
 					free(str[j]);
 						j--;
-					free(str);
 				}
+				free(str);
 			}
 		j++;
 	}
