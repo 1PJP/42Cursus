@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 15:41:58 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 12:28:50 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/27 22:23:55 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return ((char *)str);
 	while (str[s] && s < len)
 	{
+		t = 0;
 		while (to_find[t] && to_find[t] == str[s + t] && s + t < len)
 			t++;
 		if (!to_find[t])

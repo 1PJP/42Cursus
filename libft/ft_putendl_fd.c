@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 19:21:48 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/24 19:32:25 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/27 22:32:31 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	ft_putendl_fd(char *s, int fd)
 	while (s[i])
 	{
 		write(fd, &s[i], 1);
-		write(fd, "\n", 1);
 		i++;
 	}
+	write(fd, "\n", 1);
 }
 /*#include <stdio.h>
 int	main(void)

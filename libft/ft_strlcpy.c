@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:21:16 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 12:28:45 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/27 22:17:29 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	j = 0;
 	while (src[j])
 		j++;
-	if (j > 0)
+	if (size == 0)
+		return (j);
+	i = 0;
+	while (i < size - 1 && src[i])
 	{
-		i = 0;
-		while (i < (size - 1) && src[i])
-		{
-			dst[j] = src[i];
-			i++;
-		}
+		dst[i] = src[i];
+		i++;
 	}
-	dst[j] = '\0';
-	return (size);
+	dst[i] = '\0';
+	return (j);
 }
 /*
 #include <stdio.h>
