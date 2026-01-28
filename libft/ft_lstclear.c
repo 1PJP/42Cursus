@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 15:14:08 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/26 18:09:36 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/28 19:12:35 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	if (!lst || !del)
 		return ;
 	clear = *lst;
-	while (!clear)
+	while (clear)
 	{
 		clear = clear->next;
 		ft_lstdelone(*lst, del);

@@ -6,7 +6,7 @@
 #    By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/17 20:10:05 by jezambra          #+#    #+#              #
-#    Updated: 2026/01/27 22:05:57 by jezambra         ###   ########.fr        #
+#    Updated: 2026/01/28 14:53:52 by jezambra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,6 +69,7 @@ RM = rm -f
 .PHONY: all clean fclean re
 
 all: $(NAME)
+bonus: $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $@ $^

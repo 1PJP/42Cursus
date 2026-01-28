@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 12:50:35 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/27 13:44:12 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/28 19:01:13 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,29 +24,29 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 int	main(void)
 {
-	t_list *chance;
-	t_list *new;
+	t_list *nodo1;
+	t_list *newnodo1;
 	char str0[] = "primer nodo";
 	char str1[] = "nuevo nodo";
 
 // Nodo inicial de la lista
-	chance = ft_lstnew(str0);
-	printf("%s\n", (char *)chance->content);
-	printf("%p\n\n", (void *)chance->next);
+	nodo1 = ft_lstnew(str0);
+	printf("%s\n", (char *)nodo1->content);
+	printf("%p\n\n", (void *)nodo1->next);
 
 // Nuevo nodo que vamos a añadir al frente
-	new = ft_lstnew(str1);
+	newnodo1 = ft_lstnew(str1);
 
 // Añadir al frente
-	ft_lstadd_front(&chance, new);
+	ft_lstadd_front(&nodo1, newnodo1);
 
+	//printf("%d", ft_lstsize(nodo1));
 // Mostrar lista después de añadir
-	printf("Primer nodo-> %s\n", (char *)chance->content);
-	printf("Next del primer nodo-> %p\n\n", (void *)chance->next);
-	printf("Segundo nodo-> %s\n", (char *)chance->next->content);
-	printf("Next del segundo nodo-> %p\n", (void *)chance->next->next);
+	printf("Primer nodo-> %s\n", (char *)newnodo1->content);
+	printf("Segundo nodo-> %s\n", (char *)newnodo1->next->content);
+	printf("Next del segundo nodo-> %p\n", (void *)newnodo1->next->next);
 
-	free(new);
+	free(newnodo1);
 	return (0);
 }*/
 /*aqui remplazamos el primer nodo de **lst por *new el nodo new apunta

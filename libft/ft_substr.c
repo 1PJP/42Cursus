@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 13:24:40 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/27 23:00:34 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/28 20:19:19 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,21 @@
 
 char	*ft_substr(char const *s, unsigned int star, size_t len)
 {
-	size_t	i_sub;
-	char	*memory;
+	unsigned int	i;
+	char			*memory;
 
 	if (!s)
 		return (NULL);
-	memory = malloc(len + 1);
+	memory = malloc(sizeof(char) * len + 1);
 	if (!memory)
 		return (NULL);
-	i_sub = 0;
-	while (i_sub <= len && s[star])
+	i = 0;
+	while (i < len && s[star + i])
 	{
-		memory[i_sub] = s[star];
-		star++;
-		i_sub ++;
+		memory[i] = s[star + i];
+		i ++;
 	}
-	memory[i_sub] = '\0';
+	memory[i] = '\0';
 	return (memory);
 }
 /*# include <stdio.h>

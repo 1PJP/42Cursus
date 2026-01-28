@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 20:57:31 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/27 22:50:14 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/28 19:39:00 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j++;
 	if (i < j)
 		i = j - 1;
-	s2 = malloc(sizeof(char const) * ((ft_strlen(s1) + 1) - i - j + 1));
+	s2 = malloc(sizeof(char) * ((i - j + 2)));
 	if (!s2)
 		return (NULL);
 	i_s = 0;
