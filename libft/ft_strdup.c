@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 19:14:00 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/22 13:20:40 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/29 17:29:25 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *s)
 	char	*ptr;
 	size_t	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	while (s[i])
 		i++;
@@ -27,7 +25,7 @@ char	*ft_strdup(const char *s)
 	if (!ptr)
 		return (NULL);
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
 	{
 		ptr[i] = s[i];
 		i++;

@@ -6,11 +6,12 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 13:24:40 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/28 20:19:19 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/29 17:55:59 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int star, size_t len)
 {
@@ -19,11 +20,16 @@ char	*ft_substr(char const *s, unsigned int star, size_t len)
 
 	if (!s)
 		return (NULL);
+	i = ft_strlen(s);
+	if (star >= i)
+		return (ft_strdup(""));
+	if (len > i - star)
+		len = i - star;
 	memory = malloc(sizeof(char) * len + 1);
 	if (!memory)
 		return (NULL);
 	i = 0;
-	while (i < len && s[star + i])
+	while (i < len)
 	{
 		memory[i] = s[star + i];
 		i ++;

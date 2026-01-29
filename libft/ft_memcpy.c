@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:46:23 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 12:28:31 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/29 17:03:34 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*sr;
 	size_t				i;
 
+	if (!dest && !src)
+		return (dest);
 	des = (unsigned char *)dest;
 	sr = (const unsigned char *)src;
 	i = 0;
@@ -26,7 +28,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		des[i] = sr[i];
 		i++;
 	}
-	return (des);
+	return (dest);
 }
 /*
 #include <stdio.h>
