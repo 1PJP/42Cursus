@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 16:52:52 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/28 18:55:06 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:28:17 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static void	words_in_box(char **str, char const *s, char c, int word)
 
 static char	**free_memory(char **str, int j)
 {
-	while (str[j])
+	while (j >= 0)
 	{
 		free(str[j]);
 		j--;
@@ -112,13 +112,13 @@ char	**ft_split(char const *s, char c)
 	words_in_box(str, s, c, word);
 	return (str);
 }
-
-/*int main(void)
+/*
+int main(void)
 {
 	char **result;
 	int i;
 
-	result = ft_split("hola, mundo", ',');
+	result = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^",'^');
 	i = 0;
 	while (result[i])
 	{

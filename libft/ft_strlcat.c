@@ -6,7 +6,7 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 18:47:49 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/19 12:28:43 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:28:27 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len_d + i] = '\0';
 	return (len_d + len_s);
 }
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 int	main(void)
 {
-	char	d[] = "priviet";
-	char	s[] = "spasiva";
-	size_t	n = 12;
+	char	d[] = "hola";
+	char	s[] = "hola";
+	size_t	n = 9;
 
 	printf("%s\n%s\n", d, s);
-	ft_strlcat(d, s, n);
+	printf("%zu\n", ft_strlcat(d, s, n));
+	// ft_strlcat(d, s, n);
 	printf("%s\n", d);
 	return (0);
 }*/
