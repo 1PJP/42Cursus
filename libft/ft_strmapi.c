@@ -6,11 +6,10 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 12:21:56 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:31 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:13:59 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

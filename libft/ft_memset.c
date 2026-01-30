@@ -6,11 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 19:16:48 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:08 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:13:00 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

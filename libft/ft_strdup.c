@@ -6,12 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 19:14:00 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:23 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:13:31 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

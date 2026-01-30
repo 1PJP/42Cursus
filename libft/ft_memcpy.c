@@ -6,11 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:46:23 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:06 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:12:55 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

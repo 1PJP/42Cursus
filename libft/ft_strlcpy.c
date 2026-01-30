@@ -6,11 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:21:16 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:28 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:13:48 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

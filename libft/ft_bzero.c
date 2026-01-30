@@ -6,12 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:30:41 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:27:37 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:11:07 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

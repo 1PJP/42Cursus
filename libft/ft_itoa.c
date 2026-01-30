@@ -6,11 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 12:30:41 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:27:48 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:11:52 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	dig_sig(long nbr)
 {

@@ -6,12 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 15:14:08 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:27:53 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:12:04 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

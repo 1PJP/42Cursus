@@ -6,13 +6,11 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 16:52:52 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:17 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:13:24 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 static void	words_in_box(char **str, char const *s, char c, int word)
 {

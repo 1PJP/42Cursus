@@ -6,11 +6,10 @@
 /*   By: jezambra <jezambra@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 13:24:40 by jezambra          #+#    #+#             */
-/*   Updated: 2026/01/30 17:28:38 by jezambra         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:14:25 by jezambra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int star, size_t len)
